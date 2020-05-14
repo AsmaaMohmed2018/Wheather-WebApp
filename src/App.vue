@@ -1,28 +1,52 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!-- Navbar -->
+  <div id="app" class="h-100">
+    <ul class="nav flex-column float-right ">
+      <li class="nav-item py-4 my-2 rotate">
+        <!-- Home Route -->
+      <router-link class="nav-link h-100" to="/">Home</router-link>
+      </li>
+      <li class="nav-item py-4 rotate">
+        <!-- weather Route -->
+      <router-link class="nav-link h-100" to="/weather">Weather</router-link>
+      </li>
+    </ul>
+    <router-view />    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home';
+import VueRouter from 'vue-router';
+import WeatherForecast from './components/WeatherForecast';
 
 export default {
-  name: 'app',
+  name: "App",
+  data() {
+    return {
+      page:'Home'
+    };
+  },
   components: {
-    HelloWorld
-  }
+    Home,
+    WeatherForecast    
+  }  
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+<style >
+
+/* to make the component full height */
+html,body{
+  height:100%;
 }
+.rotate{
+transform: rotate(-90deg);
+}
+#app{
+  background-color: #222831;
+  height: 100%;
+}
+
 </style>
