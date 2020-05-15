@@ -1,0 +1,15 @@
+icon link
+--------------------
+http://openweathermap.org/img/wn/13d@2x.png
+https://openweathermap.org/weather-conditions
+
+open weather api
+--------------------
+https://documenter.getpostman.com/view/4805376/RznEKJSb?version=latest#8f891a51-e791-44af-b002-56a708f6dfa1
+https://home.openweathermap.org/api_keys
+http://api.openweathermap.org/data/2.5/weather?q=Egypt,Cairo&APPID=4387055141a01ecfc7ba33a4391f3bd4
+
+openweather docs
+-------------------
+https://openweathermap.org/current
+
